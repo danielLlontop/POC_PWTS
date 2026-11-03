@@ -1,0 +1,11 @@
+node_modules/
+.env
+dist/
+screenshots/
+logs/
+src/saucedemo/test/traces/*.zip
+src/saucedemo/cucumber-report.html
+cucumber-report.json
+*.log
+.DS_Store
+

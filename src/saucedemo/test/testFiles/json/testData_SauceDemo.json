@@ -1,0 +1,32 @@
+{
+  "users": {
+    "standard": {
+      "username": "standard_user",
+      "description": "Usuario estándar sin restricciones"
+    },
+    "locked": {
+      "username": "locked_out_user",
+      "description": "Usuario bloqueado para pruebas negativas"
+    },
+    "problem": {
+      "username": "problem_user",
+      "description": "Usuario con problemas de renderizado"
+    },
+    "performance": {
+      "username": "performance_glitch_user",
+      "description": "Usuario con latencia intencional"
+    }
+  },
+  "defaultCustomer": {
+    "firstName": "Daniel",
+    "lastName": "Tester",
+    "postalCode": "15036"
+  },
+  "expectedMessages": {
+    "orderCompleteHeader": "Thank you for your order!",
+    "orderCompleteBody": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+    "lockedUserError": "Epic sadface: Sorry, this user has been locked out.",
+    "invalidCredentialsError": "Epic sadface: Username and password do not match any user in this service"
+  }
+}
+

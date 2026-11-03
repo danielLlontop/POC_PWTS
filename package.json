@@ -1,0 +1,40 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Framework de automatización E2E con Playwright, TypeScript y Cucumber para Sauce Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/saucedemo/test/utils/runner.js",
+    "test:smoke": "node src/saucedemo/test/utils/runner.js --tags \"@smoke\"",
+    "test:e2e": "node src/saucedemo/test/utils/runner.js --tags \"@e2e\"",
+    "test:auth": "node src/saucedemo/test/utils/runner.js --tags \"@autenticacion\"",
+    "test:catalogo": "node src/saucedemo/test/utils/runner.js --tags \"@catalogo\"",
+    "test:compra": "node src/saucedemo/test/utils/runner.js --tags \"@compra\"",
+    "test:headed": "node src/saucedemo/test/utils/runner.js --headed",
+    "test:serial": "node src/saucedemo/test/utils/runner.js --parallel 1",
+    "report": "start src/saucedemo/cucumber-report.html",
+    "trace": "npx playwright show-trace"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "cucumber",
+    "bdd",
+    "automation",
+    "saucedemo"
+  ],
+  "author": "QA Automation Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.13.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
+
